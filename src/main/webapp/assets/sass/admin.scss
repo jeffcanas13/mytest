@@ -1,0 +1,67 @@
+body.admin .main_container .top_nav {
+    padding: 0 !important;
+    display: block;
+    margin-left: 150px;
+    z-index: 2;
+    transition: all .6s ease;
+}
+
+body.admin .nav.side-menu li a {
+    text-align: center !important;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 22px 5px;
+    color: #00eaff!important;
+    border-bottom: 1px solid #4da4b2;
+}
+
+body.admin .nav.side-menu li.active > a {
+    color: #ffffff!important;
+}
+
+body.admin .nav.side-menu li a:hover {
+    background-color: #00687d;
+    color: #ffffff;
+}
+
+body.admin > .nav.side-menu > li.active-sm > a {
+    color: #1ABB9C !important;
+}
+
+body.admin .nav.side-menu li a i.toggle-up {
+    display: none !important;
+}
+
+body.admin .nav.side-menu li a i {
+    font-size: 30px;
+    text-align: center;
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+
+body.admin .profile {
+    display: none;
+}
+
+.c-d-s{
+    background: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #ccc;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.btn-sqr {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 10px;  
+    border-radius:3px!important;
+}
+
+
+.panel-height {
+    max-height: 50px;
+}

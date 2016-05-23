@@ -1,0 +1,274 @@
+//
+// Utilities
+// --------------------------------------------------
+
+// Border Width
+// @include border-width($border-widths);
+
+// Table
+.tb-f {
+	table-layout: fixed !important;
+}
+
+// Display
+.d-t{
+	display: table  !important;
+	// table-layout: fixed  !important;
+}
+
+.d-tc{
+	display: table-cell  !important;
+}
+
+.d-tr{
+	display: table-row  !important;
+}
+
+.d-b{
+	display: block !important;
+}
+
+.d-ib{
+
+	display: inline-block !important;
+}
+
+.d-n{
+
+	display: none !important;
+}
+
+@media (min-width: $screen-xs-min) {
+	.d-t-xs{
+		display: table !important;
+	}
+	.d-tr-xs{
+		display: table-row !important;
+	}
+	.d-tc-xs{
+		display: table-cell !important;
+	}
+
+	// fix for row in ie
+	.d-t-xs.row{
+		margin: 0;
+		table-layout: fixed;
+		width: 100%;
+
+		> div{
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.d-t-sm{
+		display: table !important;
+	}
+	.d-tr-sm{
+		display: table-row !important;
+	}
+	.d-tc-sm{
+		display: table-cell !important;
+	}
+
+	// fix for row in ie
+	.d-t-sm.row{
+		margin: 0;
+		table-layout: fixed;
+		width: 100%;
+
+		> div{
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.d-t-md{
+		display: table !important;
+	}
+	.d-tc-md{
+		display: table-cell !important;
+	}
+	.d-tr-md{
+		display: table-row !important;
+	}
+
+	// fix for row in ie
+	.d-t-md.row{
+		margin: 0;
+		table-layout: fixed;
+		width: 100%;
+
+		> div{
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+	.d-t-lg{
+		display: table !important;
+	}
+	.d-tr-lg{
+		display: table-row !important;
+	}
+	.d-tc-lg{
+		display: table-cell !important;
+	}
+
+	// fix for row in ie
+	.d-t-lg.row{
+		margin: 0;
+		table-layout: fixed;
+		width: 100%;
+
+		> div{
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+
+// Positioning
+.p-a{
+	position: absolute;
+}
+
+.p-f{
+	position: fixed;
+}
+
+.p-r{
+	position: relative;
+}
+
+.p-s{
+	position: static;
+}
+// Vertical Aligning
+
+.va-m{
+	vertical-align: middle  !important;
+}
+
+.va-t{
+	vertical-align: top  !important;
+}
+
+.va-b{
+	vertical-align: bottom  !important;
+}
+
+// Visibility
+
+.vv{
+	visibility: visible !important;
+}
+
+.vh{
+	visibility: hidden !important;
+}
+
+// Size
+
+.fluid{
+	@include square(100%  !important);
+}
+
+.fluid-h-width{
+	width: 50%  !important;
+}
+
+.fluid-width{
+	width: 100%  !important;
+}
+
+.fluid-h-height{
+	height: 50%  !important;
+}
+
+.fluid-height{
+	height: 100%  !important;
+}
+
+// Floating
+
+.f-n{
+	float: none !important;
+}
+
+@media (min-width: $screen-xs-min) {
+	.f-n-xs{
+		float: none !important;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.f-n-sm{
+		float: none !important;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.f-n-md{
+		float: none !important;
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+	.f-n-lg{
+		float: none !important;
+	}
+}
+
+// Overflow
+.o-h {
+	overflow: hidden;
+}
+
+.o-v {
+	overflow: visibility;
+}
+
+// Border
+@include border-width($border-widths);
+
+// Height
+@include height($heights);
+
+// Max Height
+@include max-height($max-heights);
+
+// Max Width
+@include max-width($max-widths);
+
+// Margin
+@include margin($margins);
+
+// Padding
+@include padding($paddings);
+
+// Width
+@include width($widths);

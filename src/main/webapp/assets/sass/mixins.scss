@@ -1,0 +1,173 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// Typography
+
+@mixin text-emphasis-variant-v2($parent, $color) {
+    #{$parent} {
+        color: $color !important;
+   }
+    a#{$parent}:hover,
+    a#{$parent}:focus {
+        color: darken($color, 10%) !important;
+    }
+}
+
+// Backround 
+@mixin bg-variant-v2($parent, $color) {
+    #{$parent} {
+        background-color: $color !important;
+    }
+    a#{$parent}:hover,
+    a#{$parent}:focus {
+        background-color: darken($color, 10%) !important;
+    }
+}
+
+// Border
+@mixin border-width($border-widths){
+
+    @each $border-width in $border-widths {
+
+        .bw-#{$border-width} {
+            border-width: #{$border-width}px !important; 
+        }
+
+        .blw-#{$border-width} {
+            border-left-width: #{$border-width}px !important; 
+        }
+
+        .brw-#{$border-width} {
+            border-right-width: #{$border-width}px !important; 
+        }
+
+        .btw-#{$border-width} {
+            border-top-width: #{$border-width}px !important; 
+        }
+
+        .bbw-#{$border-width} {
+            border-bottom-width: #{$border-width}px !important; 
+        }
+    }
+
+}
+
+// Width
+@mixin width($widths){
+
+    @each $width in $widths {
+
+        .w-#{$width} {
+            width: #{$width}px !important; 
+        }
+    }
+
+}
+
+// Max Width
+@mixin max-width($max-widths){
+
+    @each $max-width in $max-widths {
+
+        .mw-#{$max-width} {
+            max-width: #{$max-width}px !important; 
+        }
+    }
+
+}
+
+
+// Height
+@mixin height($heights){
+
+    @each $height in $heights {
+
+        .h-#{$height} {
+            height: #{$height}px !important; 
+        }
+    }
+
+}
+
+// Max Height
+@mixin max-height($max-heights){
+
+    @each $max-height in $max-heights {
+
+        .mh-#{$max-height} {
+            max-height: #{$max-height}px !important; 
+        }
+    }
+
+}
+
+// Margin
+@mixin margin($margins){
+
+    @each $margin in $margins {
+
+        .m-#{$margin} {
+            margin: #{$margin}px !important; 
+        }
+
+        .ml-#{$margin} {
+            margin-left: #{$margin}px !important; 
+        }
+
+        .mr-#{$margin} {
+            margin-right: #{$margin}px !important; 
+        }
+
+        .mt-#{$margin} {
+            margin-top: #{$margin}px !important; 
+        }
+
+        .mb-#{$margin} {
+            margin-bottom: #{$margin}px !important; 
+        }
+    }
+
+}
+
+// Padding
+@mixin padding($paddings){
+
+    @each $padding in $paddings {
+
+        .p-#{$padding} {
+            padding: #{$padding}px !important; 
+        }
+
+        .pl-#{$padding} {
+            padding-left: #{$padding}px !important; 
+        }
+
+        .pr-#{$padding} {
+            padding-right: #{$padding}px !important; 
+        }
+
+        .pt-#{$padding} {
+            padding-top: #{$padding}px !important; 
+        }
+
+        .pb-#{$padding} {
+            padding-bottom: #{$padding}px !important; 
+        }
+    }
+    
+}
+
+// Transformations
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+      -ms-transform: $transform; // IE9+
+          transform: $transform;
+}
+
+@mixin transform-style($stlye) {
+    -webkit-transform-style: $stlye;
+       -moz-transform-style: $stlye;
+        -ms-transform-style: $stlye;
+            transform-style: $stlye;
+}

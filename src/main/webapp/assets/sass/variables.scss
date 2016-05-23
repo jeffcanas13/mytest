@@ -1,0 +1,233 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## 
+
+$gray-base:    #000 !default;
+$gray-darker:  lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:	   lighten($gray-base, 20%) !default;   // #333
+$gray:		   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:   lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-default:					  #00687d !default;;
+$brand-default-bg:				  #ffffff !default;
+$brand-default-border:			  #e6e6e6 !default;
+$btn-default-color:			 	  #666;
+
+$brand-primary:					  #00687d !default;
+$brand-primary-bg:				  #00687d !default;
+$brand-primary-border:			  #00687d !default;
+$btn-primary-color:			 	  #fff !default;
+
+$brand-success:					  #7ac943 !default;
+$brand-success-bg:				  #7ac943 !default;
+$brand-success-border:			  #7ac943 !default;
+$btn-success-color:			  	  #fff !default;
+
+$brand-info:					  #038caa !default;
+$brand-info-bg:					  #038caa !default;
+$brand-info-border:				  #038caa !default;
+$btn-info-color:				  #fff !default;
+
+$brand-warning:					  #f0c34e !default;
+$brand-warning-bg:				  #f0c34e !default;
+$brand-warning-border:			  #f0c34e !default;
+$btn-warning-color:			  	  #fff !default;
+
+$brand-danger:  				  #f04934 !default;
+$brand-danger-bg:  				  #f04934 !default;
+$brand-danger-border:  			  #f04934 !default;
+$btn-danger-color:  			  #fff !default;
+
+$brand-dark-green: 				  #03a1c3 !default;
+$brand-dark-green-bg: 			  #03a1c3 !default;
+$brand-dark-green-border: 		  #03a1c3 !default;
+$btn-dark-green-color: 			  #fff !default;
+
+$brand-dark-green-lighter: 		  #00b4b4 !default;
+$brand-dark-green-lighter-bg: 	  #00b4b4 !default;
+$brand-dark-green-lighter-border: #00b4b4 !default;
+$btn-dark-green-lighter-color:    #fff !default;
+
+
+
+$brand-black: 	#1b1e1e !default;
+
+//== Scaffolding
+//
+//## 
+$body-bg:	 #000 !default;
+
+$text-color: #fff !default;
+
+//== Typography
+//
+//##
+
+$font-family-sans-serif:	"Raleway", sans-serif !default;
+
+$headings-font-family:    "BebasNeue" !default;
+$headings-font-weight:    300 !default;
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-border-radius-base:         4px !default;
+$btn-border-radius-large:        6px !default;
+$btn-border-radius-small:        3px !default;
+
+
+//== Forms
+//
+//##
+
+$input-bg:                       transparent !default;
+// $input-color:                    #ccc !default;
+$input-border:                   $gray !default;
+
+$input-border-radius:            1px;
+$input-border-radius-large:      1px;
+$input-border-radius-small:      1px;
+
+$input-border-focus:             $brand-primary !default;
+
+$input-color-placeholder:        inherit !default;
+
+$input-height-base:              43px;
+// $input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+// $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+
+$input-group-addon-bg:           $gray !default;
+$input-group-addon-border-color: $gray !default;
+
+
+//-- Z-index master list
+//
+// 
+
+$zindex-section-prealoader:	1060 !default;
+
+
+//== Media queries breakpoints
+//
+//##
+
+$screen-md:           992px !default;
+$screen-md-min:       $screen-md !default;
+
+$screen-xlg:          1400px !default;
+$screen-xlg-min:      $screen-xlg !default;
+$screen-xlg-desktop:  $screen-xlg-min !default;
+
+$screen-xxlg:         1600px !default;
+$screen-xxlg-min:     $screen-xxlg !default;
+$screen-xxlg-desktop: $screen-xxlg-min !default;
+
+$screen-lg-max:       ($screen-xlg-min - 1) !default;
+$screen-xlg-max:      ($screen-xxlg-min - 1) !default;
+
+//== Panels
+//
+//##
+
+$panel-bg:                    #fff !default;
+$panel-body-padding:          15px !default;
+$panel-heading-padding:       10px 15px !default;
+$panel-footer-padding:        $panel-heading-padding !default;
+$panel-border-radius:         $btn-border-radius-base !default;
+
+//** Border color for elements within panels
+$panel-inner-border:          #ddd !default;
+$panel-footer-bg:             #f5f5f5 !default;
+
+$panel-default-text:          $gray-dark !default;
+$panel-default-border:        #ddd !default;
+$panel-default-heading-bg:    #f5f5f5 !default;
+
+$panel-primary-text:          #fff !default;
+$panel-primary-border:        $brand-primary !default;
+$panel-primary-heading-bg:    $brand-primary !default;
+
+$panel-info-text:             #fff !default;
+$panel-info-border:      	  $brand-info-border !default;
+$panel-info-heading-bg:   	  $brand-info-bg !default;
+
+$panel-success-text:          #fff !default;
+$panel-success-border:        $brand-success-border !default;
+$panel-success-heading-bg:    $brand-success-bg !default;
+
+$panel-warning-text:          #fff !default;
+$panel-warning-border:        $brand-warning-border !default;
+$panel-warning-heading-bg:    $brand-warning-bg !default;
+
+$panel-danger-text:          #fff !default;
+$panel-danger-border:        $brand-danger-border !default;
+$panel-danger-heading-bg:    $brand-danger-bg !default;
+
+$panel-dark-green-text:          #fff !default;
+$panel-dark-green-border:        $brand-dark-green-border !default;
+$panel-dark-green-heading-bg:    $brand-dark-green-bg !default;
+
+$panel-dark-green-lighter-text:          #fff !default;
+$panel-dark-green-lighter-border:        $brand-dark-green-lighter-border !default;
+$panel-dark-green-lighter-heading-bg:    $brand-dark-green-lighter-bg !default;
+
+
+
+
+//== Grid system
+//
+//## 
+
+$grid-float-breakpoint: $screen-md-min !default;
+$grid-gutter-width:     30px !default;
+
+//== Container sizes
+//
+//##
+
+$container-tablet:           (628px + $grid-gutter-width) !default;
+$container-sm:               $container-tablet !default;
+
+$container-desktop:          (852px + $grid-gutter-width) !default;
+$container-md:               $container-desktop !default;
+
+$container-large-desktop:    (1060px + $grid-gutter-width) !default;
+$container-lg:               $container-large-desktop !default;
+
+$container-x-large-desktop:  (1160 + $grid-gutter-width) !default;
+$container-xlg:              $container-x-large-desktop !default;
+
+$container-xx-large-desktop: (1360px + $grid-gutter-width) !default;
+$container-xxlg:             $container-xx-large-desktop !default;
+
+//== Utilities
+//
+//##
+
+// Border
+$border-widths: 0,1,2,3,4,5,6,7,8,9,10;
+
+// Width
+$widths:   0,10,20,30,40,50;
+
+// Max Width
+$max-widths: 50,100,150,200,250,300,350,400,450,500,600;
+
+// Height
+$heights:  0,1,10,20,30,40,50;
+
+// Max Height
+$max-heights: 50,100,150,200,250,300,350,400,450,500,600;
+
+// Margin
+$margins:  0,5,10,15,20,30,40,50;
+
+// Padding
+$paddings: 0,5,10,15,20,30,40,50;
+

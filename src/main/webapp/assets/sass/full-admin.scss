@@ -1,0 +1,26 @@
+body.full-admin .main_container .top_nav {
+    padding: 0 !important;
+    display: block;    
+    z-index: 2;
+    margin:0px!important;
+    transition: all .6s ease;
+}
+
+body.full-admin .container.body .left_col {
+    width: 90px;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    z-index: 200;
+    background-color: #007c91;
+    transition: all .6s ease;
+}
+body.full-admin .main_container .right_col {
+   padding: 30px 10px;
+   transition: all .6s ease;
+  
+}
+
+
+
+

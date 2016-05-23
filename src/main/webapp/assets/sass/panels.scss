@@ -1,0 +1,13 @@
+
+// Contextual variations
+
+.panel-dark-green {
+  @include panel-variant($panel-dark-green-border, $panel-dark-green-text, $panel-dark-green-heading-bg, $panel-dark-green-border);
+}
+
+.panel-light-green {
+  @include panel-variant($panel-dark-green-lighter-border, $panel-dark-green-text, $panel-dark-green-lighter-heading-bg, $panel-dark-green-lighter-border);
+}
+
+
+

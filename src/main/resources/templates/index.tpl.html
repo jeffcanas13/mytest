@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" ng-app="ATMS" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <base th:href="@{/}"/>
+
+    <title>ATMS - Activity Tracking and Monitoring System</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!-- build:css dist/assets/styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css dist/assets/styles/style.css -->
+    <!-- injector:css -->
+    <!-- endinjector -->
+    <!-- endbuild -->
+
+    <!-- build:js dist/scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js dist/scripts/script.js -->
+    <!-- injector:js -->
+    <!-- endinjector -->
+    <!-- endbuild -->
+
+</head>
+
+<body class="admin ng-cloak">
+
+<div class="container body">
+    <main role="main" class="main_container">
+        <div ui-view="navbar" class="col-md-3 left_col"></div>
+        <div ui-view="header" class="top_nav"></div>
+        <div ui-view="content" class="right_col"></div>
+    </main>
+</div>
+
+</body>
+</html>

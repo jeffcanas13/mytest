@@ -1,0 +1,39 @@
+server:
+    port: 80
+    server-header: ATMS v@version@
+    security:
+        rememberme:
+            key: 56fb188ca93fe7c3b948c2da3c66a32fbc0c283bc18c1d46a0d9001908262eb4
+    compression:
+        enabled: true
+        mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+
+spring:
+    profiles:
+        active: dev
+    devtools:
+        restart:
+            enabled: true
+            additional-paths: src/main/java, src/main/resources
+        livereload:
+            enabled: true
+    datasource:
+        url: jdbc:mysql://10.120.20.133:3306/ # database server jdbc:<platform eg: mysql/postregsql/mssql>://<server address>:<server port>/
+        name: atms # database name
+        username: root
+        password: root
+        connection-properties: ?useUnicode=true&characterEncoding=utf8
+        schema: classpath:datasource/schema.sql
+        data: classpath:datasource/data.sql
+        initialize: false # change this to false after the initial deployment
+    mail:
+        host: localhost
+        port: 25
+        username:
+        password:
+    thymeleaf:
+        mode: LEGACYHTML5
+        cache: false
+
+management:
+    add-application-context-header: false

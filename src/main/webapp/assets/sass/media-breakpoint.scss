@@ -1,0 +1,23 @@
+//
+// Media Breakpoint
+// --------------------------------------------------
+
+.media-breakpoint{
+	visibility: hidden;
+
+	.mb-xs{
+		width: $screen-xs;
+	}
+
+	.mb-sm{
+		width: $screen-sm;
+	}
+
+	.mb-md{
+		width: $screen-md;
+	}
+
+	.mb-lg{
+		width: $screen-lg;
+	}
+}

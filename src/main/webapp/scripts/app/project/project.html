@@ -1,0 +1,86 @@
+ <div class = "pull-right"><button type = "submit" class="btn btn-light-green" ui-sref="project.new">Create Project</div>
+ <div class="table-responsive">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <form class="navbar-form navbar-left" role="search"
+                                  ng-submit="getProjects(pagination.projectList.searchQuery, pagination.projectList.pageNumber = 1)">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search"
+                                           ng-model="pagination.projectList.searchQuery">
+                                </div>
+                                <button type="Search" type="submit" class="btn btn-light-green">Search</button>
+                                <button type="Reset" class="btn btn-default"
+                                        ng-click="getProjects(pagination.projectList.searchQuery = '', pagination.projectList.pageNumber = 1)">
+                                    Reset
+                                </button>
+                            </form>
+                        </div>
+ <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Project Code</th>
+                                <th>Parent Project</th>
+                                <th>Vertical</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="projectList in projectList.ProjectList">
+                                <!-- ng-if="projectList.projectList" > -->
+                                <!-- ng-init="assignedMilestoneIndex = $index" -->
+                                  
+                                <td>{{projectList.name}}</td>
+                                
+                                <td>{{projectList.code}}</td>
+                                <td>{{hehe}}hehe</td>
+                                <td>{{projectList.vertical.name}}</td>
+                                <td>{{projectList.status.label}}</td>
+                                
+                    </div>
+                </div>
+                                  
+                               <!-- 
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle btn-taskin" type="button"
+                                                data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true"> {{taskToPerform[assignedMilestoneIndex] ?
+                                            taskToPerform[assignedMilestoneIndex].name : 'Choose a task ...'}}
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a ng-click="taskToPerform[assignedMilestoneIndex] = null">Choose a task
+                                                    ...</a>
+                                            </li>
+                                            <li ng-repeat="task in tasks">
+                                                <a ng-click="taskToPerform[assignedMilestoneIndex] = task">{{task.name}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row pull-right">
+                                        <button type="button" class="btn btn-dark-green" ng-hide="true">
+                                            Projectize</i></button>
+                                        <button type="button" class="btn btn-primary" milestone-task="in"
+                                                milestone="{{assignedMilestone.milestone.id}}"
+                                                task="{{taskToPerform[assignedMilestoneIndex].id}}">Task In
+                                        </button>
+                                        <button type="button" class="btn btn-light-green" ng-hide="true">
+                                            Done</i></button>
+                                    </div>
+                                </td>
+                            </tr> -->
+                            </tbody>
+                        </table>
+                         <pagination ng-model="pagination.projectList.pageNumber" items-per-page="10"
+                                    max-size="pagination.maxSize" total-items="pagination.projectList.totalItems"
+                                    ng-change="getProjects(pagination.projectList.searchQuery, pagination.projectList.pageNumber)"
+                                    page-size="projectList ? projectList.length - 1 : 0">
+                        </pagination>
+
+                    </div>
+                </div>
+            

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" ng-app="ATMS" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <base th:href="@{/}"/>
+
+    <title>ATMS - Activity Tracking and Monitoring System</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!-- build:css dist/assets/styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css dist/assets/styles/style.css -->
+    <!-- injector:css -->
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="stylesheet" href="assets/styles/cloak.css">
+    <link rel="stylesheet" href="assets/styles/custom.css">
+    <!-- endinjector -->
+    <!-- endbuild -->
+
+    <!-- build:js dist/scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular-moment/angular-moment.js"></script>
+    <script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
+    <script src="bower_components/moment-duration-format/lib/moment-duration-format.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-breadcrumb/release/angular-breadcrumb.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js dist/scripts/script.js -->
+    <!-- injector:js -->
+    <script src="scripts/app/atms.js"></script>
+    <script src="scripts/app/atms.constants.js"></script>
+    <script src="scripts/app/error/error.js"></script>
+    <script src="scripts/app/home/home.controller.js"></script>
+    <script src="scripts/app/home/home.js"></script>
+    <script src="scripts/app/login/login.controller.js"></script>
+    <script src="scripts/app/login/login.js"></script>
+    <script src="scripts/app/project/project-new-controller.js"></script>
+    <script src="scripts/app/project/project.controller.js"></script>
+    <script src="scripts/app/project/project.js"></script>
+    <script src="scripts/app/vertical/vertical.controller.js"></script>
+    <script src="scripts/app/vertical/vertical.js"></script>
+    <script src="scripts/components/activity/activity.service.js"></script>
+    <script src="scripts/components/auth/account.service.js"></script>
+    <script src="scripts/components/auth/auth.service.js"></script>
+    <script src="scripts/components/auth/principal.service.js"></script>
+    <script src="scripts/components/header/header.controller.js"></script>
+    <script src="scripts/components/header/header.directive.js"></script>
+    <script src="scripts/components/interceptor/auth.interceptor.js"></script>
+    <script src="scripts/components/milestone/milestone.directive.js"></script>
+    <script src="scripts/components/milestone/milestone.service.js"></script>
+    <script src="scripts/components/navbar/navbar.sidebar.directive.js"></script>
+    <script src="scripts/components/navbar/navbar.toggle.directive.js"></script>
+    <script src="scripts/components/pagination/pagination.directive.js"></script>
+    <script src="scripts/components/project/project.service.js"></script>
+    <script src="scripts/components/task/task.service.js"></script>
+    <script src="scripts/components/util/date.service.js"></script>
+    <script src="scripts/components/vertical/vertical.service.js"></script>
+    <!-- endinjector -->
+    <!-- endbuild -->
+
+</head>
+
+<body class="admin ng-cloak">
+
+<div class="container body">
+    <main role="main" class="main_container">
+        <div ui-view="navbar" class="col-md-3 left_col"></div>
+        <div ui-view="header" class="top_nav"></div>
+        <div ui-view="content" class="right_col"></div>
+    </main>
+</div>
+
+</body>
+</html>

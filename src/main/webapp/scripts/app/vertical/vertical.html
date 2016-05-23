@@ -1,0 +1,75 @@
+<div class="" role="main">
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="col-md-12">
+        	
+        	<!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <!-- DUMMY DUMMY DUMMY -->
+						<h3>New Vertical</h3>
+                        <form class="navbar-form" role="New Verticals" ng-submit="saveVertical()" >
+                                    <label>Name: </label>
+                                    <input type="text" class="form-control"
+                                           ng-model="vertical.name">
+                                    <span ng-show="vertical.errors.name">{{vertical.errors.name}}</span>
+                                    <br />
+                                    <label>Code: </label>
+                                    <input type="text" class="form-control"
+                                           ng-model="vertical.code">
+                                    <span ng-show="vertical.errors.code">{{vertical.errors.code}}</span>
+                                    <br />
+                                    <label>Description: </label>
+                                    <input type="text" class="form-control"
+                                           ng-model="vertical.description">
+                                    <br />
+                                <button type="submit" class="btn btn-light-green">Save</button>
+								<button type="Reset" class="btn btn-default">Reset</button>
+								<!-- ng-click="getAssignedMilestones(pagination.assignedMilestones.searchQuery = '', pagination.assignedMilestones.pageNumber = 1)">-->
+                        </form>
+                            <hr />
+		<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        	
+        	<!-- SEARCH VERTICALS -->
+               <div class="col-md-12">
+                        <div class="row">
+                            <form class="navbar-form navbar-left" role="search"
+                                  ng-submit="getAssignedMilestones(pagination.assignedMilestones.searchQuery, pagination.assignedMilestones.pageNumber = 1)">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search"
+                                           ng-model="pagination.assignedMilestones.searchQuery">
+                                </div>
+                                <button type="Search" type="submit" class="btn btn-light-green">Search</button>
+                                <button type="Reset" class="btn btn-default"
+                                        ng-click="getAssignedMilestones(pagination.assignedMilestones.searchQuery = '', pagination.assignedMilestones.pageNumber = 1)">
+                                    Reset
+                                </button>
+                            </form>
+                        </div>
+                        <!-- <a href = "#">Create New Verticals</a> -->
+        	
+              <!-- VERTICAL TABLE -->
+                <div class="table-responsive">
+                    <div class="col-lg-10 col-md-9">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Status</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="vertical in verticalList">
+                                <td><a href="#"> {{ vertical.verticals.name }} </a></td>
+                                <td>{{ vertical.verticals.description }}</td>
+                                <td>{{ vertical.status.label }}</td>
+
+                            </tr>
+                           
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    	</div>
+  	  </div>
+   </div>

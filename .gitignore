@@ -1,0 +1,19 @@
+# Eclipse
+/.classpath
+/.project
+/.settings/**
+
+# IDEA
+/.idea/**
+
+# Maven
+/.mvn/**
+
+# SASS
+/.sass-cache/**
+
+# Node
+/node_modules/**
+
+# Build files
+/target/**
