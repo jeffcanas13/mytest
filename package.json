@@ -24,6 +24,6 @@
   "scripts": {
     "test": "grunt test"
   },
-  "author": "Jonathan Leijendekker",
+  "author": "john",
   "license": "ISC"
 }
